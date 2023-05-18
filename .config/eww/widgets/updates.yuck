@@ -1,0 +1,7 @@
+(defpoll update_no :interval "60s" `bash /home/mik3y/.config/eww/scripts/pacman_updates.sh`)
+
+(defwidget updates []
+    (box :class "module" :space-evenly "false" :orientation "h" :spacing "3" 
+        (label :text "󰮯 " :class "updates")
+        (label :text update_no :class "updates" )
+        (label :text "pending updates" :class "updates")))

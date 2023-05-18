@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrains Mono Nerd Font";
+    font-weight: 700;
+    font-size: 14px;
+    color: #e0def4;
+}
+
+/* --------------------------------------- Common Styles -------------------------------------- */
+
+/* Style for module */
+.module {
+    background: #232136; 
+    border-radius: 10px; 
+    border: 2px solid #eb6f92;
+    margin-right: 8px;
+    padding: 0 15px;
+}
+
+/* Remove the `margin-right` for the last module */
+.last-widget {
+    margin-right: 0;
+}
+
+/* Make the bar transparent */
+.bar {
+    background: transparent;
+}
+
+.date {
+    color: #eb6f92;
+}
+
+.updates {
+    color: #f6c177;
+}
+
+.workspace_btn {
+    background: transparent;
+    padding: 0 8px 0px 14px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    outline: 0px ;
+}
+
+.workspace_btn:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+.workspace_label {
+   color: #eb6f92; 
+   font-size: 16px;
+}
+
+.cpu {
+    color: #ebbcba;
+}
+
+.ram {
+    color: #31748f;
+}
+
+.time {
+    color: #c4a7e7;
+}
+
+.net_status {
+    color: #9ccfd8;
+}
+
+/* -------------------------------------- Desktop Widget -------------------------------------- */
+
+.desktop {
+    background-color: transparent;
+}
+
+.desktop_clock {
+    padding: 40px 35px;
+}
+
+.desktop_time {
+    font-size: 96px;
+}
+
+.desktop_time_h, .desktop_time_m {
+    color: #eb6f92;
+}
+
+.desktop_time_colon {
+    color: #e0def4;
+}
+
+.desktop_time_p {
+    color: #eb6f92;
+}
+
+.desktop_date_date {
+    margin-left: 10px;
+}
+
+.desktop_date {
+    font-size: 32px;
+    color: #eb6f92;
+}
+
+/* -------------------------------------Powermenu Widget---------------------------------------*/
+.powermenu {
+    border-radius: 10px;
+    border: 2px solid #eb6f92;
+}
+
+.powermenu_button {
+    background: transparent;
+    padding: 20px;
+}
+
+.powermenu_button:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+}
+
+.powermenu_button:nth-child(2) {
+    border-radius: 0 0 10px 10px;
+}
+
+.powermenu_button:hover {
+    background: #2a283e;
+}
+
+.powermenu_label_restart {
+    color: #c4a7e7;
+    font-size: 32px;
+}
+
+.powermenu_label_poweroff {
+    color: #eb6f92;
+    font-size: 32px;
+}

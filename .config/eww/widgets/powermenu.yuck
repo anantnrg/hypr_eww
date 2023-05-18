@@ -1,0 +1,6 @@
+(defwidget powermenu []
+    (box :orientation "v" :space-evenly "true" :spacing "4" :class "powermenu"
+        (button :class "powermenu_button" :halign "center" :valign "center"
+            (label :text "" :class "powermenu_label_restart"))
+        (button :class "powermenu_button" :halign "center" :valign "center"
+            (label :text "󰐥" :class "powermenu_label_poweroff"))))

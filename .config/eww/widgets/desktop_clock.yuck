@@ -1,0 +1,16 @@
+(defpoll p :interval "1s" `date +\"%p\"`)
+
+(defwidget desktop_clock []
+    (eventbox
+        (box :class "desktop_clock" :space-evenly "false" :orientation "v" :spacing "3"
+            (box :space-evenly "false" :orientation "h" :spacing "3" :halign "center"
+                (label :text h :class "desktop_time desktop_time_h")
+                (label :text " :" :class "desktop_time desktop_time_colon")
+                (label :text m :class "desktop_time desktop_time_m")
+                (label :text p :class "desktop_time desktop_time_p"))
+            (box :class "desktop_date_box" :space-evenly "false" :orientation "h" :spacing "3" :halign "center"
+                (label :text day :class "desktop_date desktop_date_day")
+                (label :text ", " :class "desktop_date desktop_date_comma")
+                (label :text month :class "desktop_date desktop_date_month")
+                (label :text "  " :class "desktop_date")
+                (label :text date :class "desktop_date desktop_date_date")))))

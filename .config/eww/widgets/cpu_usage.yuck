@@ -1,0 +1,5 @@
+(defpoll cpu_usage :interval "1s" `bash /home/mik3y/.config/eww/scripts/cpu_usage.sh`)
+
+(defwidget cpu_usage []
+    (box :class "module" :space-evenly "true" :orientation "h" :spacing "1"
+        (label :text "  ${cpu_usage}" :class "cpu")))

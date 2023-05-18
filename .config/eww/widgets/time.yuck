@@ -1,0 +1,14 @@
+(defpoll h :interval "1s" `date +\"%I\"`)
+(defpoll m :interval "1s" `date +\"%M\"`)
+(defpoll s :interval "1s" `date +\"%S\"`)
+
+(defwidget time []
+    (eventbox 
+    (box :class "module last-widget" :space-evenly "false" :orientation "h" :spacing "3" 
+        (label :text "󱑂 " :class "time")
+        (label :text h :class "time" )
+        (label :text ":" :class "time" )
+        (label :text m :class "time")
+        (label :text ":" :class "time" )
+        (label :text s :class "time")
+)))

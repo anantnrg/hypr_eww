@@ -1,0 +1,5 @@
+(defpoll net_status :interval "60s" `bash /home/mik3y/.config/eww/scripts/network.sh`)
+
+(defwidget net_status []
+    (box :class "module" :hexpand false :vexpand false :space-evenly "true" :orientation "h"
+        (label :text {net_status ? "󰖩  Online" : "󰖪  Offline"} :class "net_status" )))

@@ -1,0 +1,5 @@
+(defpoll ram_usage :interval "1s" `bash /home/mik3y/.config/eww/scripts/ram_usage.sh`)
+
+(defwidget ram_usage []
+    (box :class "module" :space-evenly "true" :orientation "h" :spacing "3" :width "20px"
+        (label :text "󰑭  ${ram_usage}" :class "ram")))

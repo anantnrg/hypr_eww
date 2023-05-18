@@ -1,0 +1,6 @@
+(defpoll volume :interval "5s" `pamixer --get-volume` )
+
+(defwidget audio []
+    (box :class "module" :space-evenly "true" :orientation "h" :spacing "3" 
+        (button :onclick "pavucontrol"
+            (label :text "󰓃 ${volume}%"))))

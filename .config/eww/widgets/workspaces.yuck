@@ -1,0 +1,17 @@
+(defwidget workspaces []
+  (eventbox
+    (box :class "module" :space-evenly "false" :orientation "h" :spacing "3"
+      (button :class "workspace_btn" :onclick "hyprctl dispatch workspace 1"
+        (label :text " " :class "workspace_label"))
+      (button :class "workspace_btn" :onclick "hyprctl dispatch workspace 2"
+        (label :text " " :class "workspace_label"))
+      (button :class "workspace_btn" :onclick "hyprctl dispatch workspace 3"
+        (label :text " " :class "workspace_label"))
+      (button :class "workspace_btn" :onclick "hyprctl dispatch workspace 4"
+        (label :text " " :class "workspace_label"))
+      (button :class "workspace_btn" :onclick "hyprctl dispatch workspace 5"
+        (label :text "󱋱 " :class "workspace_label"))
+      (button :class "workspace_btn" :onclick "hyprctl dispatch workspace 6"
+        (label :text "󰙯 " :class "workspace_label"))
+      (button :class "workspace_btn" :onclick "hyprctl dispatch workspace 7"
+        (label :text " " :class "workspace_label")))))

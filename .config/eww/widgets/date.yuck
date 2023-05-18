@@ -1,0 +1,13 @@
+(defpoll day :interval "1s" `date +\"%A\"`)
+(defpoll month :interval "1s" `date +\"%b\"`)
+(defpoll date :interval "1s" `date +\"%d\"`)
+
+(defwidget date []
+    (eventbox
+        (box :class "module" :space-evenly "false" :orientation "h" :spacing "3"
+            (label :text " " :class "date" )
+            (label :text day :class "date")
+            (label :text ", " :class "date")
+            (label :text month :class "date")
+            (label :text " ")
+            (label :text date :class "date"))))
