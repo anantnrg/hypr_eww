@@ -26,7 +26,7 @@ cp -r hypr_eww/.config/* ~/.config/
 
 **Status Bar** - [Eww](https://elkowar.github.io/eww)
 
-**Terminal** - Kitty](https://github.com/kovidgoyal/kitty)
+**Terminal** - [Kitty](https://github.com/kovidgoyal/kitty)
 
 **Text Editor** - [NeoVim](https://neovim.io)
 
